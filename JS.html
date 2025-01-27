@@ -1,0 +1,885 @@
+<!--
+js
+js is easy to learn and 
+to create interactive and dynamic website 
+variables:
+used to store the value
+by giving name
+
+declare of variable:
+var
+let
+const
+var= globalscope
+let=local scope
+const=local scope
+
+const= change value is not possible constant
+var=we an change
+let =we can change
+to have same name as var name use""
+var a=10
+var b=20
+console.log(a)   
+
+var,let,const=keywords
+a=variable
+=operator
+10=data
+cosole.log=function
+
+globle scope:
+{
+var a=10
+}
+console.log(a) ans=10
+local scope:
+{
+let a=10
+console.log(a)
+} ans=10
+
+{
+let a=10
+}
+console.log(a) ans=wrong
+
+task1
+var price=100
+var product="i phone"
+var tax=10
+console.log(product)
+var total=price+tax
+console.log(total)
+task 2:
+var fruitname='apple'
+var count=10
+var price=100
+var total=count*price
+console.log(total)
+
+a++=post inc
+++a=pre increment
+a--=post dec
+--a=pre dec
+
+var a=10
+b=a++
+console.log(a)=11
+console.log(b)=10
+here a++ want to see the another a 
+then only it become 11
+
+var a=10
+b=++a
+console.log(b)=11
+boc here the a container see
+++a so increment
+
+dat types:
+premitive::
+number
+string
+boolen
+none
+undefined
+to check the data type
+use: console.log(type of(1,"vijay",true,()=undefined))
+non premitive::
+object
+array
+functions::
+these are block of code
+used to perfome particular task
+
+function abc()
+{
+  console.log("hello")
+}
+abc()
+ans=hello
+
+var a=10
+var b=20
+function abc()
+{
+  console.log(a+b)
+}
+abc() ans=30
+here console is output
+what we want to print
+
+Events:
+onclick
+onmousehover
+onload
+onkeydown
+onmouseout
+onkeyup
+onkeydown
+onchange
+var factor="vijay"
+var fplayer="sachin"
+var fmovie="master"
+function favourite()
+{
+  console.log("favourite actor:"+factor)
+  console.log("favourite player:"+fplayer)
+  console.log("favourite movie:"+fmovie)
+}
+favourite()
+ans:favourite actor:vijay
+favourite player:sachin
+favourite movie:master
+
+parameters:
+fuction add(a,b)=here a,b is parameters
+
+function add(a,b)
+{
+  console.log(a+b)
+}
+add(10,20)
+Output:30
+
+function area(l,b)
+{
+  var a=l*b
+  console.log("area is:"+a)
+}
+area(10,20)
+ans:area is 200
+
+return type;
+function name()
+{
+  return "john"
+}
+var a=name()
+console.log(a)
+ans:john
+
+function add(a,b)
+{
+  return (a+b)
+}
+var total=add(10,20)
+console.log(total)
+ans:30 
+if else:
+if(true)
+{
+  console.log("its true")
+}
+ans:its true
+if(false)
+{
+  console.log("its true")
+}
+else{
+  console.log("its false")
+}
+ans:its false
+
+var rain=true
+if(rain)
+{
+  console.log("enjoy the rain")
+}
+else{
+  console.log("go home")
+}
+ans:enjoy the rain
+And operator &&:
+console.log(true&&false&&true)
+ans:false
+both t =t
+or operator||:
+console.log(true&&false&&true)
+ans:true
+not operator !:
+console.log(!true)
+ans:false
+
+var color="green"
+if(color=="red")
+{
+  console.log("stop")
+}
+if(color=="yellow")
+{
+  console.log("get ready")
+}
+if(color=="green")
+{
+  console.log("go")
+}
+ans:go
+var score=55
+if(score<=50)
+{
+  console.log("you need to improve")
+}
+else if(score>50 && score<=70)
+{
+  console.log("good")
+}
+else if (score>70)
+{
+  console.log("super")
+}
+ans:good  --> -->
+<!--<input type="text" id="name">
+const name=docment.getelement by id("name").value
+const name=to store the value
+document=all file store as doc 
+getelement by =id,name,class
+.vlue=to fetch the value
+~=back <tick-->
+<!--string reverse:
+  function i(){
+    let str="vijay";
+    for(i=str.length-1;i>=0;i--)
+    {
+        console.log(str[i])
+    
+    }
+    }
+    i();
+    odd or even:
+    var num=10
+if(num%2==0){
+    console.log("the num is even")
+}
+else{
+ console.log("the num is odd")
+}
+prime or not:
+
+function fun(){
+    let value=10
+    let result=0;
+    for(i=1;i< value;i++){
+        if(value%i==0){
+            result++;
+        }
+}
+if(result<1 ||result>2){
+    console.log("not to prime");
+
+}
+else{
+    console.log("prime");
+}
+}
+fun()-->
+
+<!--dom manipulation 
+ document object model
+ <p id="one">
+    hello
+</p>
+
+<script>
+    var vj=document.getElementById("one")
+    console.log(vj.textContent)
+</script>
+ans:hello
+<p id="one">
+    hello
+</p>
+
+<script>
+    var vj=document.getElementById("one")
+    console.log(vj.textContent)
+    vj.textContent="bye"
+</script>
+here bye in op
+hello in console
+event task:
+<p id="one">
+    hello
+</p>
+<button onclick="change()">change</button>
+<script>
+    var vj=document.getElementById("one")
+    console.log(vj.textContent)
+
+
+function change()
+{
+    vj.textContent="bye"
+}
+</script>
+here hello displayed start
+by cliking button now bye is displayed
+
+ 
+use textcontent for h1,p
+use value for input
+
+
+<input id="num1" value="23">
+<input id="num2" value="21">
+<button onclick="resultfunction()">add</button>
+<p id="result">Result</p>
+
+<script>
+    var box1=document.getElementById("num1")
+    var box2=document.getElementById("num2")
+    var result=document.getElementById("result")
+   
+   var box1value=Number(box1.value)
+   var box2value=Number(box2.value)
+  var total=box1value+box2value
+
+  function resultfunction()
+  {
+    result.textContent=total
+  }
+
+</script>
+amstrong num
+26= 2 digits so 2sqr ,6sqr
+4+36=40 it compare the ans and ques if ans=qes then it is amstrong
+Math.random:
+gives value 0.0 to 0.9
+var a= Math.random()
+console.log(a)
+Math.floor:
+like round off
+gives single value
+ var b=Math.floor(0.99)
+ console.log(b)-->
+
+<!--random score task:
+ <h1>guess the number</h1>
+<input id="guessnumber">
+<button onclick="check()">check</button>
+<p id="result">you are wrong/right</p>
+<p id="score">score:10</p>
+<script>
+    var guessnumber=document.getElementById("guessnumber")
+    var result=document.getElementById("result")
+    var score=document.getElementById("score")
+    var randomNumber=Math.floor(Math.random()*10)+1
+    var totalscore=10
+    function check()
+    {
+      var enterednumber=guessnumber.value
+      if(randomNumber==enterednumber)
+      {
+
+        console.log("right")
+        result.textContent="right"
+        alert("you won!...")
+      }
+      else{
+        totalscore=totalscore-1
+        score.textContent="score:"+totalscore
+         result.textContent="wrong"
+      }
+
+    }
+</script>
+-->
+
+<!--
+css using js:
+<style>
+  div{
+      background-color: black;
+      width: 100px;
+      height: 100px;
+  }
+</style>
+<div id="box"></div>
+<button onclick="change()">change color</button>
+<script>
+  var box=document.getElementById("box")
+
+  function change()
+  {
+     box.style.backgroundColor="red"
+  }
+</script>-->
+
+<!--to change the width &.widthmax:
+
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transition:2s
+    }
+    .widthmax{
+        width:900px;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">change color</button>
+<script>
+    var box=document.getElementById("box")
+
+    function change()
+    {
+       box.setAttribute("class","widthmax")
+    }
+</script>-->
+
+<!--array;
+Push =to store from last
+Pop =to remove from last
+unshift =to add from start 
+shift =to remove from start 
+cocate =to add to value
+join = add to value without using ,comma
+length=length of String 
+to string= to change type num to string
+splice=is use to add value using index2 0 13,14 add 
+splice=here we want to give index and start value(0,5)
+
+index of = let pos=num1.index of (1)
+lastindex of  let pos=num1.last index(1)
+include= first it search the num if present it print true
+         if not present it print false  
+
+sort = is used to arrange in asscending order 
+reverse=to revers the value 
+let num=[1,2,3,4,5]
+let num2=[3,4,5,6,7]
+num.push(2)
+console.log(num);ans
+[ 1, 2, 3, 4, 5, 2 ]
+num.pop()
+console.log(num);ans:[ 1, 2, 3, 4 ]
+num.unshift(2)
+console.log(num);
+[ 2, 1, 2, 3, 4, 5 ]
+num.concat(num)
+console.log(num+num2);
+1,2,3,4,53,4,5,6,7
+let a=['red','green','white']
+a=a.reverse();
+console.log(a);
+[ 'white', 'green', 'red' ]
+let a=['red','green','white']
+a=a.sort();
+console.log(a);
+[ 'green', 'red', 'white' ]
+sort asc order :
+ var arr=[40,80,10,90,20]
+        var temp;
+        for(let i=0;i<arr.length;i++){
+            for(let j=0;j<arr.length;j++){
+                if(arr[i]>arr[j]){
+                 temp=arr[i];
+                 arr[i]=arr[j];
+                 arr[j]=temp;
+                }
+            }
+        }
+        console.log(arr);
+        sort des:
+         var arr=[40,80,10,90,20]
+        var temp;
+        for(let i=0;i<arr.length;i++){
+            for(let j=0;j<arr.length;j++){
+                if(arr[i]<arr[j]){
+                 temp=arr[i];
+                 arr[i]=arr[j];
+                 arr[j]=temp;
+                }
+            }
+        }
+        console.log(arr);
+        patten pro:
+var num=5
+var result="";
+for(let i=1;i<=num;i++){
+  for(let j=1;j<=i;j++){
+    result+="*";
+    
+  }
+  console.log(result);
+  result="";
+}
+  output:
+*
+**
+***
+****
+*****
+
+var num=5
+var result="";
+for(let i=1;i<=num;i++){
+  for(let j=1;j<=num;j++){
+    result+="*";
+    
+  }
+  console.log(result);
+  result="";
+}
+*****
+*****
+*****
+*****
+*****
+
+fibronic series:
+function fib(){
+    let num=6;
+    let sum=0;
+    for(i=1;i<=num;i++){
+        sum+=i
+    }
+    console.log(sum);
+}
+fib();
+
+for in =in thisused to get the key
+for of=in this used to get the value 
+for each= in this we can get index and value
+for in:
+let arr=[{name:vijay,age:22}]
+arr.index in(index){
+console.log(index);
+}
+for off:
+let arr=[{name:vijay,age:22}]
+arr.index in(index){
+console.log(index);
+}
+fo each:[{name:vijay,age:22}]
+arr.for each((index,value,array))=>{
+console.log(index);
+console.log(value);
+console.log(arr);
+}
+rejects in string
+str.replace(/"hello","hai"/g); here the g=global
+it change only lower case or upper case given
+str.replace(/"hello","hai"/i); i= incase sensitive
+
+string types:
+length=to print length
+charat=to get the index value,here we cant give neg num if we give then it takes 0 and give start value
+charcodeat=to get the huki num of inde
+at=we can give negative values=str.at(-1)
+slice=by giveing the [2,5]star num and end num
+sub string=here we can give neg value[-7]it takes it as and print =hello world fully
+substr =str.sub str (7,5)
+toupper case=convert to upper case
+tolower case=convert to lower case
+concat=to add to string
+trim=to remove wide space here 
+trim start=to remove from start
+trim end=to remove from end
+pad start=to add zero or star in front and end=[5,""]=*5
+pad end=used to add zero at end[5,"0"]=500000
+repat=to repeat the word
+repalce=to repalce the value
+repalce all=to replace all ("hello","hai")
+split=to split the to values
+
+
+task print enter value
+<input id="inputbox" onkeyup="update()">
+<h1 id="result"></h1>
+
+<script>
+  var inputbox=document.getElementById("inputbox")
+  var result=document.getElementById("result")
+   function update(){
+    result.textContent=inputbox.value
+   }
+</script>
+
+task to print hello back to back
+<button onclick="update()">add</button>
+<div id="result"></div>
+<script>
+  var div=document.getElementById("result")
+  function update()
+  {
+    var head=document.createElement("h1")
+    head.textContent="hello"
+    div.append(head)
+  }
+</script>
+ 
+task to change button color
+<button id="btn" onclick="update()">change color</button>
+<script>
+  var btn=document.getElementById("btn")
+function update(){
+  btn.style.backgroundColor="red"
+}
+</script>
+
+
+ARRAY itration
+reduce method:
+var num=[1,2,3,4]
+console.log(num.reduce((acc,num)=>acc+num));
+1+2=3+3=6+4=10
+
+map method:
+let a=[20,10,30,5]
+let b=a.map(x=>x*2);
+console.log(b);
+ans=40,20,60,10
+
+flat map:
+let a=[20,10,30,5]
+let b=a.map(x=>[x+x+2);
+console.log(b);
+ans :it gives value in list array
+
+filter method
+let cost=[20,21,523,25,23.27];
+let lessthan100=cost.filter(x=>x<100);
+console.log(lessthan100);
+
+with method:
+l.et fruits=["apple","orange","banana"]
+let new fruits=fruits.with(1,"cherry");
+console.log(new fruits);
+
+string search:
+index of =it gives 
+last index of=it takes space also count 
+include=check true or false
+search=
+match=it will match and give value
+match all=it match all value in index and another value
+starts with=
+ends with=
+
+to change num=123 diff
+use let num=123;
+let num1=num.to string();
+
+ session storage=if web page close then data removed
+ local storage=save in system until we erase it
+
+ 12,2,9
+
+ set methods:
+ set date(); 
+let d=new date();
+console.log(d)
+ set full year();
+ set hours();
+ set minutes();
+ set milesecounds();
+ set month();
+ set secounds();
+ set time();
+
+-->
+ <!--get methods:
+ get date();
+ get full year();
+ get hours();
+ get minutes();
+ get milesecounds();
+ get month();
+ get secounds();
+ get time();
+
+here the time is in gmt
+so use 5.30to ist
+for hours the time star from 
+1971to now-->
+<!--set timeout();=used in website use time 3000 3sec
+cleartimeout();if we use settimeout use  this
+setinterval();
+clearinterval();let v=settimeout(function fun(){
+  console.log("hello")
+
+}
+let v=stetimeout(fun,3000);
+cleartimeout(v)-->
+
+
+<!--let count=0;
+let i=setinterval(function func1(){
+  count++;
+  console.log("hello");
+  if(count==10){
+    clearinterval(i);
+  }
+},2000);
+
+promise  :            sucesses,error
+let pro=new promise((resolve,reject)){
+let x=true
+if (x)
+resolve();
+}
+else{
+reject();
+}
+
+pro.then=uesd when true=here pro is decleard value top
+pro.catch=used when false
+pro.finaly=for both last print
+
+pro,then((res)=>{console.log()}
+.catch((err)=>{
+console.log(err)
+})
+.finaly(()=>{
+console.log("thank you");
+})
+
+in asce the await fun use then the
+exegution will be
+ 1 print
+ wait for 2nd print
+ then third value print
+
+ REGULAR EXPRESSION:Regects
+ //=symbole of regects
+^=start use like=/^
+$=end
+[]=any
+{}=min to max length
+to use:
+/^ $/
+/^[a-z A-Z]+$/
+/^[a-z A-Z]+@+$/
+/^[a-z A-Z]+@[gmail]+[a-z A-Z]$/
+/^[A-Z a-z 0-9]+@[gmail]+.[a-Z A-Z]{2-3}]$/=for password specification 
+to check regect:
+let email="vijay@gmail.com";
+regex=/^[A-Z a-z 0-9]+@[gmail]+.[a-Z A-Z]{2-3}]$/
+if(regex.text(email)){
+console.log("same");
+}
+else{
+console.log("not same");
+}
+api:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload=" dataGet()">
+    <form >
+        <input type="text" placeholder="name" id="name">
+        <input type="number" placeholder=" age" id="age">
+        <input type="number" placeholder="mobile" id="mobile">
+        <button type="button" onclick="dataSend(10)">send</button>
+    </form>
+    <div id="show"></div>
+    <script>
+
+
+        function dataGet(){
+// setTimeout(()=>{
+    fetch("https://retoolapi.dev/vksj1o/data")
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(response.status)
+            }
+            else {
+                // console.log(response.json())
+                return response.json();
+            }
+        })
+        .then((data)=>{
+            console.log(data);
+
+            for( let i of data){
+                console.log("name :"+i.name +"age : "+ i.age)
+                document.getElementById("show").innerHTML += '<h1>'+i.id+". "+i.name+'</h1>'+
+                '<h2>'+i.age+'</h2>'+
+                '<h3>'+i.mobile+'</h3>'+
+                '<button type="button" onClick="dataDelete('+i.id+')">delete</button>'+
+                '<button type="button" onClick="dataUpdate('+i.id+')">update</button><hr>'
+            }
+            
+            
+        });
+// },1000)
+        }
+
+
+async function dataSend(){
+    try{
+        let userName = document.getElementById("name").value;
+    let userAge = document.getElementById("age").value;
+    let userMobile = document.getElementById("mobile").value
+let setData = await fetch("https://retoolapi.dev/vksj1o/data",{
+    method:"POST",
+    headers:{
+        "content-type":"application/json"
+    },
+    body:JSON.stringify({
+        name:userName,
+        age:userAge,
+        mobile:userMobile
+    })
+
+        
+});
+data = setData.json()
+console.log(data);
+
+    }
+    catch(err){
+        console.log(err);
+    }
+    dataGet();
+}
+
+async function dataDelete(id){
+    try{
+let deleteData = await fetch("https://retoolapi.dev/vksj1o/data/"+id,{
+    method:"DELETE"
+});
+if(deleteData.ok){
+console.log(data Deleted ${id})
+}
+    }
+    catch(err){
+
+    }
+}
+
+async function dataUpdate(id){
+
+  try{
+    let dataUpdate = await fetch("https://retoolapi.dev/vksj1o/data/"+id,{
+        method:"PUT",
+        // headers:{
+        //     "content-type":"appplication/json"
+        // },
+        // body:json.stringify({
+            
+        // })
+    });
+
+    data = dataUpdate.json();
+    console.log(data)
+  }
+catch(err){
+    console.log(err);
+}
+}
+    </script>
+</body>
+
+</html>
+function types:
+arrow fun
+immediatley invocked fun
