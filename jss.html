@@ -1,0 +1,598 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h1 id="vijay"></h1>
+    <button type="submit" onclick="convert()">convert</button>
+    <script>
+         let name=document.getElementById("vijay")
+          name.innerHTML="welcome to js"
+          /*FOR INPUTS USE THIS and use cap letter for innerHTML
+         function convert(){
+          let cmval=Number(document.getElementById("input").value)
+          let incValue=cmval/2.54
+          let result=document.getElementById("result")
+          result.innerHTML=inchVal.tofixed(2)
+    }
+          here to fixed(2)to give only 2 digit if 3 given 3 digits printy*/ 
+
+        //   use alert("message")
+      // for link js go to html open <script src="new.js">
+          /*math function
+          math.round(5.8)
+          =6
+          math.floor(5.8)
+          =5 it will remove all value after.
+          math.sqrt(55)
+          =7.41619870
+          math.abs(-9)
+          =9
+          math.pow(8,5)
+          =32768 it gives the 8power of 5
+          math.min(5,6,7)
+          =5
+          math.max(5,6,7)
+          =7
+          math.ramdom()
+          it gives random values*/
+          
+           /* string methods
+           str.concate=used to add two values
+           str.slice8(4,10)=it will take star 4 end10 lettter
+           str.substring(4,10)=it will take starting4 end 10 letters
+           str.substr(4,10)it gives value 4 start give 10 charecters
+           but in slice,substring it gives 4 to 10 letters
+           str.replace(given name,new name)
+       
+           Template literals
+           intro in 2015 with ECMAScript6 or ECMA6
+
+           Let firstname="aijay"
+           let lastname="max"
+           let city="texes"
+
+           console.log(firstname+ " "+ lastname + "lives in "+ city)=this one is long
+           so use this
+           //`backtick
+           let msg=`$(firatname) $(lastname) lives in $(city)
+           gives =ajay max lives in texes*/
+        //    let msg= `happy
+        //     birthday`
+        //    console.log(msg)=happpy 
+        //    birthday
+        //    msg=`cat's name is "toto"`
+        //    console.lod(msg)
+        // #################################
+        // from insta
+        // const name="vijay";
+        // age=22;
+        // console.log(delete name);=false
+        // console.log(delete age);=true
+        // in javascript delete operator works on object not works on variables decleared with var,let,const
+// #############################################
+/*arrays
+let cities=["chennai","madurai","tindivanam"]
+let marks=[78,88,98,33,28]
+console.log(cities.length)=3
+console.log(cities[1])=madurai
+we can give mixed element in arrays
+let arr=[8,1,2,"a","abc",[3,4]]
+console.log(arr)///////
+to see index
+console.log(arr[5][1])=3
+let ar=[[3,5,6],[2,1,9],[4,7,8]]
+console.log(ar[2][1])=7 this is 2dimentional*/
+// let arr=['a','b','c','d','e']
+// console.log(arr.push('f'));=used to add last
+// console.log(arr.pop());=used to remove end
+// console.log(arr.shift())remove from start
+// console.log(arr.unshift())add from start
+// arr.slice(2,2) 
+// console.log(arr);=[a,b,e]it start from 2 elemwnt delete 2 letters 
+// arr.slice(1,1,'m')=here after first 1 num given is how maney to delete 
+// console.log(arr)=[a,m,e]
+// arr.reverse()=reverse used to 
+// console.log(arr);
+// let str=arr.join()used to join and change array to string
+// console.log(arr);
+// let str3="g,e,d,a"
+// let arr =str3.split(',')used to split
+// console.log(arr);=['g','e','d','a']
+// in join it will give a=[1,2,3]b=[7,8,1]it will print b in 2row 
+// so use this concate
+// a.concateb=it will print all in singleline
+/*if else:
+let pass_crt= true
+if(pass_crt){
+    console.log("you are logged in")
+}
+else{
+    console.log("sry incorrect");
+}
+max of two Number
+let a=27,b=1
+let max
+if(a<b){
+
+}
+else{
+    console.log("b is max");    
+}
+terinary operator:?:
+max=a>b?s:b*/
+/*<script>
+    // fd rate calculator only js
+    function fdrate(){
+    const months=Number(document.getElementById("input").value)
+    let  rate=0
+    if (months<3)
+      rate =5.8
+    else if(months>=3 && months<=6)
+      rate =6.5
+    else if(months>=7 && months<=9)
+      rate =6.8
+    else
+      rate=7
+// nowto show ans in id=result when give queryselector give with(#)
+      let result=document.querySelector("#result")
+      result.innerHTML="your intrest rate is"+ rate + "%"
+    }
+    ############################################
+    SWITCH CASE
+    case value1:
+      statement executed when the result match value1
+      break
+    case value2:
+      statement executed when the result match value2
+      break
+    case valueN:
+      statement executed when the result match valueN
+      break
+    default:
+      statement executed when none of the value match the value of expression
+      break:*/
+      // js for droupdown
+/*const button =document.querySelector("button")
+// event listener
+button.addEventListener("click",displaystarts)
+function displaystarts(){
+
+const input=document.getElementById("input")
+const city=input.options[input.selectedIndex]
+let population=0,literacyrate=0, language=""
+switch (city){
+  case "bengalour":
+    population=87654
+    literacyrate=98.91
+    language="kanada"
+    break
+    case "chennai":
+    population=87654
+    literacyrate=88.91
+    language="tamil"
+    break
+    case "kerla":
+    population=87654
+    literacyrate=78.91
+    language="malayalam"
+    break
+    case "delhi":
+    population=87654
+    literacyrate=98.91
+    language="hindi"
+    break
+}
+let text=`the city of ${city} has population ${population} language spoken ${language}
+and litrecy rate is ${litrasyrate}%
+let resultdiv = document.createElement("div")=here new div created by js
+resultdiv.id="result" =new div id is given
+ document.getlementById("wrapper").appendchild(resultdiv)=here the newdiv is resultdiv is add to wrapperdiv by.appendchild
+  document.getlementById("result").innerHTML=text
+}*/
+/*Object
+let item={
+ name:"i phone",
+ price:250000,
+ quantity:1
+}
+console.log(item)
+// another way to print object
+let item2 =new object();
+item2.name="i phone"
+ item2.price=250000
+ item2.quantity=1
+ console.log(item2)
+//  accesing object
+// dot notation
+console.log(item.price)
+item.price=260000
+console.log(item.price)
+// adding new property
+item.retunable=true
+console.log(item)
+// square bracket notation
+console.log(item["price"])
+item[key]=27500
+console.log(item)
+let item={
+name:"phone"
+price:25000
+quantity:1
+categories:["electronics","phone"]=here we can add array to objectjs new arrobject is added
+dimensions:{=here we can add new js object to another object
+length:7,
+breath:3.5,
+height:5
+ }
+}
+console.log(item)
+console.log(item.categress)
+console.log(item.dimensions)
+#####################
+item={
+name:"phone"
+price:25000
+quantity:1
+buyt:function(){
+console.log("item addted to cart")
+ }
+}
+ item.buy()=here we gave fun inside object so its method
+################################*/
+// loop
+// for ,while,dowhile
+/*for (let i=1;i<=5;i++){
+  console.log(i)
+  
+}
+for(let i=10;i>=1;i--){
+  console.log(i);
+  
+}
+// in while we cant add intialitatio ,inc&dec inside we want to add before function
+i=10
+while(i>=1){
+  console.log(i);
+  i--;
+}
+// in do while same
+i=10
+do{
+  console.log(i);
+  i--;
+}while(i>=1)
+// ######################
+while(true){
+    let num=Number(prompt("enter a number"))
+    if(!isNaN(num))
+    break;
+}
+    #####################
+continue:
+for(i=1;i<=10;i++){
+if(i%3==0)
+continue
+console.log(i)=use continue before console
+}
+#################
+// array irtrations,// for of  
+let arr=['apple','orange','mango','grapes']
+for(i=0;i<arr.length;i++)
+console.log(arr[i].toUpperCase())
+
+for(let fruit of arr)
+console.log(fruit)
+// /for in
+item={
+    name:"phone",
+    quantity:1,
+    price:250000
+}
+for(let key in item){
+    console.log(item[key])
+}*/
+// function
+
+// function declaration =here we given name and call by name or normalfun 
+// function isPositive(num){
+//   return num>0
+
+// }
+// console.log( isPositive(-4))=here ispositive is given and tested so declaration
+// #############  q12       ws############
+// Recursion -function calling itself
+// factorial-product of first num
+// /5!=5*4*3*2*1
+// function factorial(n){    
+//   if(n==1)
+//     return 1
+//   return n*factorial(n-1)
+
+// }
+// console.log(factorial(5))
+// here firt 5 will be check after that return5-1=4 to top check next 4-1=3 like all exe 1=1 then retun 1
+// ################################################
+// function expression is let=fun
+// assign function as variable as object in this hoisting is not posibble
+// let a=100
+// let isEven=function(Even){
+//   return num%2==0
+// }
+// console.log(isEven(5));
+// console.log(isEven);
+// ##############################
+// default parameters
+// function greet(name="there")=if some thing given use or use there=hi ram
+// {
+//   console.log("hi",name);
+// }
+// greet("Ram")
+// greet()
+// ###########################################
+// hoisting 
+// console.log(findProduct(4,7));
+// function findProduct(a,b){
+//   return a*b
+
+// }
+// console.log(findProduct);
+// console.log(typeof findProduct);
+// here the console.log() is mentioned before the function so it is hoisting
+// ################################
+// sum of Array
+// let arr=[1,2,3,4,5]
+// let findsum =function(arr){
+//   let sum=0
+//   for(let val of arr){
+//     sum+=val
+//   }
+//   return sum
+// }
+// console.log(findsum(arr))
+// ##################################
+// arrow function
+// to findvol
+// let vol=(l,b,h)=>{return l*b*h}
+// console.log(vol(7,8,9))
+
+// let sumofarr=arr=>{
+//   let sum=0
+ //   for(let val of arr){
+//     sum+=val
+//   }
+//   return sum
+// }
+// console.log(sumofarr(arr))
+// ##############################
+// var arguments - rest parameters
+// let prod=function(...arg){
+//   let result=1
+//   for(let val of arg)
+//       return*=val
+//     return result
+// }
+// console.log(prod(7,6,5,3));
+// another method
+// let prod=function(){
+//   let result=1
+//   for(i=0;i<arguments.length;i++)
+//       result  *=arguments[i]
+//     return result
+// }
+// console.log(prod(7,6,5,3));
+//##################################
+// Generators-genrates value one by one
+// in genrator use yeild insted ofreturn
+// function* indexGenrator(){
+//   let index =1
+//   while(true){
+//     yeild index++
+//   }
+// }
+// const gen=indexGenrator()
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// ans=1 2 3 4 5
+// #############################
+// callback function
+// calling a function by sending function
+// function greetConsole(name){
+//   console.log("helo",name);
+
+// }
+// function greatHeading(name){
+//   const heading=document.querySelector("h1")
+//   heading.innerHtml="hello"+name
+// }
+// function greet(callback){
+// console.log(callback);
+//   callback("Ram")
+// }
+// greet(greetConsole)
+// greet(greatHeading)
+// here greet is fun now another fun name greetConsole is used to call
+// ############################
+/*for each
+call fun normally is fun
+but using . call fun is*/
+// arr=["ram","sam","don"]
+//  arr.forEach(print)=here print is fun used to call fun foreach  
+
+//  function print(val){
+//   console.log(val);
+  
+//  }
+//  using arrow fun
+// arr.forEach(val => console.log(val));
+// to get all output in uppercase
+// arr.foreach((val,index,arr)=>{
+//   arr.[index]=val.toUpperCase()
+// })
+// console.log(arr);
+// ans=["RAM","SAM","DON"]
+// ##############################
+// map-execute callback for each array
+  //   element and returns new array
+// let priceUSD = [20,30,80]
+// let priceINR =priceUSD.map(x =>x*80)
+// console.log(priceINR);
+
+// priceINR =priceUSD.map(convert)
+ 
+// function convert(val){
+//   return val*83
+// }
+// console.log(priceINR);
+// const input =[{name:"john",age:15},
+// {name:"sakthi",age:35},
+// {name:"ravi",age:45},
+// {name:"raj",age:12},
+// {name:"sam",age:10},
+// ]
+// const ages = input.map(x=>x.age)
+// console.log(age);
+// to find only age
+// #####################
+// Filter-returns new array by checking
+//        each value of Original arr using call back fn
+          // its only give filtered elements
+// let cost=[35,232,82,90,123]
+
+// let lessthan100 =cost.filter(x=>x<100)
+// console.log(lessthan100);
+// #######################
+// reduce-executes reducer callback
+//        and returns accmulated result
+       
+// cost =[35,55,78,38,27]     inside()here total is accumilator el is val 
+// let cartTotal =cost.reduce((total,el)=>total=el)
+// console.log(cartTotal);
+// here el=element
+
+// another example
+// arr2d=[
+//   ["a","b","c"]
+//   ["c","d","f"]
+//   ["d","f","g"]
+// ];
+// let result ={"a":1,"b":2}
+// result["c"]=1
+// console.log(result["d"]);
+
+// console.log(arr2d.flat())
+// let count =arr2d.flat().reduce(
+//   (accumlator,currVal)=>{
+//     if(accumlator[currVal])
+//     accumlator[currVal]++
+//   else
+//       accumlator[currVal] =1
+//     return accumlator
+// }
+// ,{});
+// console.log(count);
+// here first it convet to 1dim
+// then reduce invoke accumlator,currVal check is a present if is
+// print 1
+// not presengt =undefined
+// two c present first c is print c:1 then sec c:2 print 
+
+// notes
+// flat is used to convert 2dimension to 1dimension Array
+// console.log(arr2d.flat())
+// ["a","b","c","c","d","f","d","f","g"]
+// ##################################
+// returning function and closure
+let a=100
+
+function fun1(){
+  console.log("a is",a)
+}
+fun1()
+a=200
+fun1()
+// fun return fun is -higher order fun
+
+function outer(){
+  let outerVariable="bread"
+  function inner(){
+    let innerVariable="butter"
+    console.log("inner variable",innerVariable);
+    console.log("outer variable",outerVariable);
+
+  
+  }
+  inner()
+}
+outer()
+// here inner fun present inside outer so we call inner insideouter
+
+// event listner
+// <body>
+//     <button onclick="show()">Show</button>
+//     <div class="overlay"></div>
+//     <div class="popupbox"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus, ipsam saepe reprehenderit corrupti modi. Magni magnam a suscipit. Odit molestias cum soluta rerum, eligendi quisquam obcaecati omnis maiores doloremque maxime vero ipsum laborum itaque in quis sed officia consectetur dolorem magnam eveniet quidem qui! Nemo, voluptatibus libero! Veniam, blanditiis!</p>
+//         <br><button onclick="closepopup()">Close</button></div>
+
+//         <script>
+//             // popup overlay
+//             // popup box
+//             var popupoverlay = document.querySelector(".overlay")
+//             var popupbox = document.querySelector(".popupbox")
+//             function show()
+//             {
+//                popupbox.style.display="block"
+//                popupoverlay.style.display="block"
+//             }
+//             function closepopup(){
+//                 popupbox.style.display="none"
+//                 popupoverlay.style.display="none"
+//             }
+//         </script> -->
+// <button id="btn">show</button>
+// <script>
+//     var button=document.getElementById(("btn"))
+//     button.addEventListener("click",function(){
+//         alert("hello")
+//     })
+//     button.addEventListener("mouseover",function(){
+//         alert("mouse over")
+//     })
+</script> 
+<!-- *{
+  margin: 0;
+  padding: 0;
+}
+.overlay{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  opacity: 0.8;
+  z-index: 1;
+  display: none;
+}
+.popupbox{
+  position:absolute;
+  z-index: 2;
+  background-color: white;
+  color: black;
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  left: 30%;
+  display: none;
+} -->
+  
+
+// </script>
+// </script>
+// </body>
+// </html>
